@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #457b9d;
+}
+
+nav {
+  background-color: #1d3557;
+}
+
+nav a {
+  display: none;
+  color: white;
+  margin-left: 10px;
+}
+
+nav a:last-child {
+  display: inline;
+}
+
+nav a:last-child img {
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+}
+
+#video {
+  display: none;
+}
+
+main {
+  background-image: url("./astronomy.jpg");
+  background-size: cover;
+  background-position: absolute;
+  color: #f1faee;
+  z-index: -1;
+  margin: auto;
+}
+
+section,
+footer {
+  padding: 20px;
+}
+
+main img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline;
+  }
+
+  nav a:last-child {
+    display: none;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    background-image: none;
+  }
+
+  #video {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  main {
+    position: relative;
+  }
+
+  section,
+  nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+  nav {
+    position: static;
+  }
+}
